@@ -1,0 +1,54 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6e6e6;
+}
+
+/* Social Media Sidebar Start */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-size: 17px;
+}
+
+.icon-bar a:hover {
+    opacity: 0.66;
+}
+
+.facebook {
+    background: #3b5998;
+    color: #fff;
+}
+
+.twitter {
+    background: #55acee;
+    color: #fff;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: #fff;
+}
+
+.github {
+    background: #000;
+    color: #fff;
+}
+/* Social Media Sidebar End */
