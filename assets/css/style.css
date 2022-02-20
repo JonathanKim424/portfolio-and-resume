@@ -7,19 +7,20 @@
 
 :root {
     --primary-color: #000;
-    --secondary-color: #000;
+    --secondary-color: #fff;
 }
 
 body {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: #a9a9a9;
     font-family:'Courier New', Courier, monospace;
 }
+
+
 
 /* Header & Nav Start */
 header {
     padding: 20px 35px;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,14 +33,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--secondary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header a {
+header h1 a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 header nav ul {
@@ -51,6 +51,8 @@ header nav ul {
 }
 
 header nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -103,21 +105,51 @@ header nav ul li a {
 }
 /* Social Media Sidebar End */
 
-/* Contact Start */
-.comms {
-    width: 100%;
+/* Main Content Start */
+.page-setup {
+    max-width: 1920px;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.comms div h2 {
-    text-align: center;
-    width: 25%;
+.section-header {
+    font-size: 30px;
+    padding-right: 20px;
+    margin-right: 10px;
+    color: var(--secondary-color);
+    text-align: right;
+    width: 20%;
 }
 
+.section-content {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.primary-border {
+    border-right: 3px solid;
+    border-color: var(--secondary-color);
+}
+
+/* About Me Start */
+
+/* About Me End */
+
+/* Work Start */
+
+/* Work End */
+
+/* Contact Start */
 .comms div ul {
-    width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -130,6 +162,7 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 /* Contact End */
+/* Main Content End */
 
 /* Footer Start */
 footer {
