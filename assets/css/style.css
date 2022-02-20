@@ -5,8 +5,58 @@
     box-sizing: border-box;
 }
 
-body {
+:root {
+    --primary-color: #000;
+    --secondary-color: #000;
 }
+
+body {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Header & Nav Start */
+header {
+    padding: 20px 35px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0 , 0, 0.5);
+}
+/* Header & Nav End */
 
 /* Social Media Sidebar Start */
 .icon-bar {
@@ -29,6 +79,7 @@ body {
 
 .icon-bar a:hover {
     opacity: 0.66;
+    font-size: 22px;
 }
 
 .facebook {
@@ -51,3 +102,52 @@ body {
     color: #fff;
 }
 /* Social Media Sidebar End */
+
+/* Contact Start */
+.comms {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comms div h2 {
+    text-align: center;
+    width: 25%;
+}
+
+.comms div ul {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.comms div ul li {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+}
+/* Contact End */
+
+/* Footer Start */
+footer {
+    background: var(--primary-color);
+    padding: 40px 35px;
+}
+
+footer h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+/* Footer End */
+
+/* Utility Start */
+
+/* Utility End */
+
+/* Media Query Start */
+
+/* Media Query End */
