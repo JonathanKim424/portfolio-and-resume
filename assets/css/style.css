@@ -21,6 +21,7 @@ body {
 /* Header & Nav Start */
 header {
     padding: 20px 35px;
+    height: 80px;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
@@ -56,8 +57,15 @@ header nav ul li a {
     text-decoration: none;
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 30px;
     text-shadow: 0 0 10px rgba(0, 0 , 0, 0.5);
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
 }
 /* Header & Nav End */
 
@@ -146,7 +154,7 @@ header nav ul li a {
 
 .content {
     display: flex;
-    padding: 10px;
+    padding: 25px 10px;
     margin-right:50px;
 }
 
@@ -178,7 +186,7 @@ header nav ul li a {
 }
 
 .projMain {
-
+    padding-bottom: 20px;
 }
 
 .projMain a {
@@ -195,12 +203,17 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-bottom: 20px;
 }
 
 .projThirdRow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .projs a {
@@ -250,7 +263,7 @@ footer {
 
 footer h2 {
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
     font-size: 15px;
 }
 /* Footer End */
