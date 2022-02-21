@@ -271,6 +271,11 @@ footer h2 {
     margin: 5%;
 }
 
+.missing img {
+    max-width: 100%;
+    height: auto;
+}
+
 .missing h2 {
     color: var(--secondary-color);
 }
