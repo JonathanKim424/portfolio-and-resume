@@ -8,7 +8,7 @@
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
-    --terteriary-color: #5f9ea0;
+    --tertiary-color: #5f9ea0;
 }
 
 body {
@@ -146,25 +146,21 @@ header nav ul li a {
 
 .content {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     padding: 10px;
+    margin-right:50px;
 }
 
 .section-header {
+    flex: 1 1 20%;
     font-size: 30px;
     padding-right: 20px;
     margin-right: 10px;
     color: var(--secondary-color);
     text-align: right;
-    width: 20%;
 }
 
 .section-content {
-    flex: 2 70%;
-    align-items: center;
-    padding: 10px;
-    padding-right: 50px;
+    flex: 1 1 80%;
 }
 
 .primary-border {
@@ -177,9 +173,16 @@ header nav ul li a {
 /* About Me End */
 
 /* Work Start */
+.proj {
+    text-align: center;
+}
+
 .projMain {
+
+}
+
+.projMain a {
     position: relative;
-    display: block;
 }
 
 .projMain img {
@@ -188,11 +191,23 @@ header nav ul li a {
     height: auto;
 }
 
-.projSecondary{
+.projSecondRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projThirdRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projs a {
     position: relative;
 }
 
-.projSecondary img{
+.projs img {
     border: 3px solid var(--secondary-color);
     max-width: 100%;
     height: auto;
@@ -200,10 +215,14 @@ header nav ul li a {
 
 .imgText {
     position: absolute;
-    background-color: var(--terteriary-color);
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     bottom: 16px;
     left: 3px;
     font-size: 18px;
+    width: 150px;
+    text-align: center;
 }
 /* Work End */
 
