@@ -195,6 +195,10 @@ header nav ul li a {
     height: auto;
 }
 
+.projMain img:hover {
+    opacity: 50%;
+}
+
 .projSecondRow {
     display: flex;
     flex-wrap: wrap;
@@ -220,6 +224,10 @@ header nav ul li a {
     border: 3px solid var(--secondary-color);
     max-width: 100%;
     height: auto;
+}
+
+.projs img:hover {
+    opacity: 50%;
 }
 
 .imgText {
